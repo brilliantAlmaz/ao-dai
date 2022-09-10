@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Italiana&display=swap");
 * {
   padding: 0;
@@ -1267,6 +1268,20 @@ html.lock {
     margin: 0 auto;
     text-align: center;
   }
+
+  .info__ticketblock {
+    display: block;
+  }
+
+  .info__open-hours {
+    border-right: 0px solid #ffffff;
+    text-align: center;
+    padding: 0;
+  }
+
+  .info__btn {
+    margin: 30px auto;
+  }
 }
 .footer {
   -webkit-box-flex: 0;
@@ -1297,6 +1312,8 @@ html.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1310,11 +1327,15 @@ html.lock {
 }
 
 .footer__link {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
   color: #fff;
   font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
+  white-space: nowrap;
   line-height: 40px;
 }
 
@@ -1337,4 +1358,269 @@ html.lock {
      object-fit: cover;
   width: 26px;
   height: 26px;
+}
+
+@media (max-width: 909px) {
+  .footer__row {
+    display: block;
+  }
+
+  .footer__media {
+    max-width: 120px;
+    margin: 25px auto 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (max-width: 680px) {
+  .footer__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .footer__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .footer__list {
+    display: block;
+  }
+  .footer__list li {
+    margin: 15px 0 0 0;
+  }
+  .footer__list li:first-child {
+    margin: 0;
+  }
+}
+@media (max-width: 320px) {
+  .info__imageblock img {
+    width: 280px;
+  }
+}
+#booking .content {
+  position: relative;
+}
+#booking .main {
+  top: 0;
+  left: 0;
+}
+
+.booking {
+  z-index: 1;
+  position: absolute;
+  padding: 0 0 80px 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.booking .container {
+  width: 100vw;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.booking__overflow {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 95%;
+  background: #151515;
+  opacity: 0.5;
+}
+
+.booking__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking__textblock {
+  text-align: left;
+}
+
+.booking__title {
+  font-family: "Italiana";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  color: #E3995F;
+}
+
+.booking__text {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #FFFFFF;
+}
+.booking__text span {
+  display: block;
+  margin: 0 0 20px 10px;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #E3995F;
+}
+.booking__text span.last {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.booking__form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  background: rgba(53, 53, 53, 0.7);
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.booking__form form {
+  padding: 20px 40px;
+  border: 1px solid #E3995F;
+}
+
+.booking__form-title {
+  margin: 0 0 40px 0;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 47px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+select {
+  background: #999999;
+  margin: 0 0 20px 0;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+option {
+  width: 10%;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.booking__form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking__date {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 46%;
+          flex: 0 0 46%;
+  background: #999999;
+  margin: 0 0 20px 0;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.visitors {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 46%;
+          flex: 0 0 46%;
+  background: #999999;
+  margin: 0 0 20px 0;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.booking__total {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: right;
+  color: #FFFFFF;
+}
+.booking__total:before {
+  content: "Total Price: ";
+}
+.booking__total:after {
+  content: "đ";
+}
+
+.booking__info {
+  margin: 40px 0 0 0;
+}
+.booking__info input {
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 46%;
+          flex: 0 0 46%;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #151515;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 34px;
+  padding: 10px;
+  color: #aaa;
+  font-weight: 500;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0);
+}
+
+.booking__btn {
+  background: #E3995F;
+  margin: 10px auto 0;
+}
+
+@media (max-width: 1200px) {
+  .booking__form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+  }
+}
+@media (max-width: 950px) {
+  .booking__row {
+    display: block;
+  }
 }

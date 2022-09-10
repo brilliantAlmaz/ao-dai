@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Ao Dai</title>
+</head>
+<body>
+	<div class="wrapper" id='booking'>
+		<div class="header">
+			<div class="container">
+				<div class="header__body">
+					<div class="header__main">
+						<div class="header__burger">
+							<span></span>
+						</div>
+						<div class="header__title">Museum</div>
+					</div>
+					<div class="header__menu">
+						<ul class="header__list">
+							<li>
+								<a href="" class="header__link">Lorem, ipsum, dolor.</a>
+							</li>
+							<li>
+								<a href="" class="header__link">Lorem, ipsum, dolor.</a>
+							</li>
+							<li>
+								<a href="" class="header__link">Lorem, ipsum, dolor.</a>
+							</li>
+							<li>
+								<a href="" class="header__link">Lorem, ipsum, dolor.</a>
+							</li>
+							<li>
+								<a href="" class="header__link">Lorem, ipsum, dolor.</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header__navigation">
+						<div class="header__searchblock">
+							<input type="text" placeholder='Search'>
+							<div class="header__search-icon">
+								<img src="img/header/akar-icons_search.svg" alt="">
+							</div>
+						</div>
+						<div class="header__language-block">
+							<select name="language" id="">
+								<option value="russian">RU</option>
+								<option value="english">EN</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="main">
+				<div class="main__bg-overflow"></div>
+				<div class="main__bg-image">
+					<img src="img/main.png" alt="">
+				</div>
+			</div>
+			<div class="booking">
+				<div class="booking__overflow"></div>
+				<div class="container">
+					<div class="booking__row">
+						<div class="booking__textblock">
+							<div class="booking__title">Visit Places</div>
+							<div class="booking__text">
+								TOURIST<br>
+								<span>50.000 dong/ Ticket</span><br>
+								STUDENT AND KID<br>
+								<span>30.000 dong/ Ticket</span><br>
+								Discount<br>
+								<span class='last'>
+									5% for 10 < 50 people in Group<br>
+									10% for 50 < 100 people in Group<br>
+									15% for > 100 people in Group
+								</span><br>
+							</div>
+						</div>
+						<div class="booking__form">
+							<form method="get" action='#'>
+								<div class="booking__form-title">Book Ticket</div>
+								<select name="person" id="">
+									<option value="tourist">TOURIST</option>
+									<option value="student">STUDENT</option>
+									<option value="student">KID</option>
+								</select>
+								<div class="booking__form-row">
+									<input type="date"name='date' class="booking__date">
+									<input type="tel" name='visitorsQ'class="visitors" value=1>
+								</div>
+								<div class="booking__total total"></div>
+								<div class="booking__info">
+									<div class="booking__form-row">
+										<input type="text" name='name'placeholder='Name'>
+										<input type="text" name ='surname' placeholder="Surname">
+									</div>
+									<input type="tel" name='phone' placeholder="Your phone number">
+									<input type="text" name='email' placeholder = "Your e-mail address">
+								</div>
+								<button class="booking__btn btn">next</button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<div class="footer__row">
+					<ul class="footer__list">
+						<li>
+							<a href="error.html" class="footer__link">Contact</a>
+						</li>
+						<li>
+							<a href="error.html" class="footer__link">Private Policy</a>
+						</li>
+						<li>
+							<a href="error.html" class="footer__link">Cookies</a>
+						</li>
+						<li>
+							<a href="booking.html" class="footer__link">Buy Ticket</a>
+						</li>
+						<li>
+							<a href="error.html" class="footer__link">Term Of Use</a>
+						</li>
+					</ul>
+					<ul class="footer__media">
+						<li>
+							<a href="" class="">
+								<img src="img/media/01.svg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="img/media/02.svg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="img/media/03.svg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+	<script src='js/booking.js'></script>
+</body>
+</html>
