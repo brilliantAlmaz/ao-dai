@@ -92,6 +92,7 @@ html.lock {
 }
 
 .header {
+  background: rgba(0, 0, 0, 0.5);
   padding: 25px 0;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -135,6 +136,7 @@ html.lock {
 }
 
 .header__burger {
+  cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   display: block;
@@ -267,6 +269,7 @@ html.lock {
 }
 
 .header__language-block {
+  height: 47px;
   z-index: 1;
 }
 .header__language-block select {
@@ -306,6 +309,9 @@ html.lock {
     font-size: 34px;
   }
 
+  .header__language-block {
+    height: 35px;
+  }
   .header__language-block select {
     height: 35px;
     width: 60px;
@@ -1401,9 +1407,6 @@ html.lock {
     width: 280px;
   }
 }
-#booking .content {
-  position: relative;
-}
 #booking .main {
   top: 0;
   left: 0;
@@ -1411,8 +1414,10 @@ html.lock {
 
 .booking {
   z-index: 1;
-  position: absolute;
-  padding: 0 0 80px 0;
+  min-height: 850px;
+  height: 110vh;
+  position: relative;
+  padding: 150px 0 0 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1424,6 +1429,9 @@ html.lock {
   max-width: 1230px;
   margin: 0 auto;
 }
+.booking .main__bg-image img {
+  min-height: 110vh;
+}
 
 .booking__overflow {
   z-index: -1;
@@ -1431,7 +1439,7 @@ html.lock {
   bottom: 0;
   left: 0;
   width: 100vw;
-  height: 95%;
+  height: 100%;
   background: #151515;
   opacity: 0.5;
 }
@@ -1620,7 +1628,65 @@ option {
   }
 }
 @media (max-width: 950px) {
+  .booking {
+    min-height: 1500px;
+  }
+  .booking .main__bg-image img {
+    min-height: 1500px;
+  }
+
   .booking__row {
     display: block;
   }
+
+  .booking__textblock {
+    text-align: center;
+  }
+}
+@media (max-width: 460px) {
+  .booking__btn {
+    width: 100%;
+  }
+
+  .booking__form-row {
+    display: block;
+  }
+
+  .booking__form {
+    padding: 10px;
+  }
+  .booking__form form {
+    padding: 20px 10px;
+  }
+}
+.error {
+  padding: 100px 0;
+  min-height: 100vh;
+  background: #151515;
+}
+
+.error__title {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 63px;
+  z-index: 5;
+  color: #E3995F;
+}
+
+.error__text {
+  margin: 30px 0;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  z-index: 5;
+  color: #E3995F;
+}
+
+.error__btn {
+  font-size: 22px;
+  text-align: center;
 }
